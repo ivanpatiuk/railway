@@ -1,0 +1,6 @@
+type User{
+    id: Long
+    name: String
+    surname: String
+    exemption: Exemption
+}

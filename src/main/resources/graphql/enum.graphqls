@@ -1,0 +1,6 @@
+enum Exemption{
+    Type1
+    Type2
+    Student
+    Pupil
+}
