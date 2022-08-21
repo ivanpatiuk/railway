@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43a7970-49ef-4974-b3c5-f7f95e15922b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/config/ScalarGraphqlConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/enums/Exemption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/graphql/queryResolvers/UserQueryResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/service/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/enum.graphqls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/mutation.graphqls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/query.graphqls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/scalars.graphqls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/type.graphqls" afterDir="false" />
+    <list default="true" id="e43a7970-49ef-4974-b3c5-f7f95e15922b" name="Changes" comment="[v1.0.0] Init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/service/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/service/Mapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="prod" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -170,8 +159,16 @@
       <workItem from="1660991529633" duration="6758000" />
       <workItem from="1661000138447" duration="83000" />
       <workItem from="1661018435081" duration="7428000" />
-      <workItem from="1661088773505" duration="2732000" />
+      <workItem from="1661088773505" duration="3742000" />
     </task>
+    <task id="LOCAL-00001" summary="[v1.0.0] Init">
+      <created>1661091972031</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661091972031</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +184,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[v1.0.0] Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="[v1.0.0] Init" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

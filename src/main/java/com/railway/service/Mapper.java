@@ -8,11 +8,7 @@ public class Mapper {
 
     private static ModelMapper modelMapper = new ModelMapper();
 
-    public static Object toDto(final Object object, final Class clazz) {
-        return modelMapper.map(object, clazz);
-    }
-
-    public static Object toEntity(final Object object, final Class clazz){
-        return modelMapper.map(object, clazz);
+    public static <T> T map(final Object object, final Class<T> clazz) {
+        return (T) modelMapper.map(object, clazz);
     }
 }
