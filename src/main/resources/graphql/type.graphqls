@@ -2,5 +2,6 @@ type UserDTO{
     id: Long
     name: String
     surname: String
+    idCard: String
     exemption: Exemption
 }

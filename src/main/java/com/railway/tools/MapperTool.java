@@ -1,13 +1,8 @@
 package com.railway.tools;
 
-import com.railway.dto.UserDTO;
-import com.railway.entity.User;
 import org.modelmapper.ModelMapper;
 
-import java.util.Objects;
-import java.util.Optional;
-
-public class Mapper {
+public class MapperTool {
 
     private static ModelMapper modelMapper = new ModelMapper();
 

@@ -2,7 +2,6 @@ package com.railway.graphql.queryResolvers;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.railway.dto.UserDTO;
-import com.railway.tools.Mapper;
 import com.railway.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

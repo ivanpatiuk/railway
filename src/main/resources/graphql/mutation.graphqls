@@ -1,0 +1,4 @@
+type Mutation{
+    "ID-card should have pattern: 'UA[a-zA-Z/d]{10}ID', e.g. UA12345QWERTYID"
+    createUser(name: String!, surname: String!, idCard: String!): UserDTO
+}

@@ -27,6 +27,9 @@ public class User {
     @Column(name = "surname")
     private String surname;
 
+    @Column(name = "id_card")
+    private String idCard;
+
     @Column(name = "exemption")
     private Exemption exemption;
 }
