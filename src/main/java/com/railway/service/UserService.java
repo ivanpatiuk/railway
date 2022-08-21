@@ -1,7 +1,9 @@
 package com.railway.service;
 
+import com.railway.dto.UserDTO;
 import com.railway.entity.User;
+import org.springframework.stereotype.Service;
 
 public interface UserService {
-    User getUser();
+    UserDTO getUserById(final Long id);
 }

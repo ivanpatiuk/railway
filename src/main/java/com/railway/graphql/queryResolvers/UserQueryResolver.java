@@ -1,19 +1,23 @@
 package com.railway.graphql.queryResolvers;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import com.railway.entity.User;
-import com.railway.enums.Exemption;
+import com.railway.dto.UserDTO;
+import com.railway.tools.Mapper;
+import com.railway.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class UserQueryResolver implements GraphQLQueryResolver {
 
-    public User getUser(){
-        return User.builder()
-                .id(1L)
-                .name("Ivan")
-                .surname("Patiuk")
-                .exemption(Exemption.Student)
-                .build();
+    private final UserService userService;
+
+    @Autowired
+    public UserQueryResolver(UserService userService) {
+        this.userService = userService;
+    }
+
+    public UserDTO getUserById(final Long id) {
+        return userService.getUserById(id);
     }
 }
