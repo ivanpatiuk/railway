@@ -2,6 +2,7 @@ package com.railway.service.impl;
 
 import com.railway.dto.UserDTO;
 import com.railway.entity.User;
+import com.railway.exeptions.MyException;
 import com.railway.repository.UserRepository;
 import com.railway.service.UserService;
 import com.railway.tools.IdCardTool;
@@ -26,17 +27,19 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDTO createUser(String name, String surname, String idCard) {
-        User userToSave = User.builder()
-                .name(name)
-                .surname(surname)
-                .idCard(IdCardTool.validateIdCard(idCard))
-                .build();
-        if (userToSave.getIdCard() != null) {
-            System.out.println("Save returned");
-            return MapperTool.map(userRepository.save(userToSave), UserDTO.class);
-        } else {
-            System.out.println("Null returned");
-            return null;
-        }
+        throw new MyException("my exception");
+
+//        User userToSave = User.builder()
+//                .name(name)
+//                .surname(surname)
+//                .idCard(IdCardTool.validateIdCard(idCard))
+//                .build();
+//        if (userToSave.getIdCard() != null) {
+//            System.out.println("Save returned");
+//            return MapperTool.map(userRepository.save(userToSave), UserDTO.class);
+//        } else {
+//            System.out.println("Null returned");
+//            return null;
+//        }
     }
 }

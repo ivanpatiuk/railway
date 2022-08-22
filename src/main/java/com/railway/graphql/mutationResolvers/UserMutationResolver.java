@@ -3,6 +3,8 @@ package com.railway.graphql.mutationResolvers;
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.railway.dto.UserDTO;
+//import com.railway.exeptions.VehicleAlreadyPresentException;
+import com.railway.exeptions.MyException;
 import com.railway.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -18,6 +20,7 @@ public class UserMutationResolver implements GraphQLMutationResolver {
     }
 
     public UserDTO createUser(String name, String surname, String idCard){
-        return userService.createUser(name, surname, idCard);
+        throw new MyException("Hello");
+//        return userService.createUser(name, surname, idCard);
     }
 }

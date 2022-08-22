@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43a7970-49ef-4974-b3c5-f7f95e15922b" name="Changes" comment="[v1.0.2] Added dataBase support.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/graphql/mutationResolvers/UserMutationResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/tools/IdCardTool.java" afterDir="false" />
+    <list default="true" id="e43a7970-49ef-4974-b3c5-f7f95e15922b" name="Changes" comment="[v1.1.0] Added dataBase logic for User.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/railway/exeptions/MyException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/graphql/queryResolvers/UserQueryResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/graphql/queryResolvers/UserQueryResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/graphql/mutationResolvers/UserMutationResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/graphql/mutationResolvers/UserMutationResolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/railway/tools/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/railway/tools/MapperTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/graphql/mutation.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/graphql/mutation.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/graphql/type.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/graphql/type.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,30 +44,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/genda/IdeaProjects/railway/src/main",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "0edf49df2720a1457065294e760cd80c"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/genda/IdeaProjects/railway/src/main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0edf49df2720a1457065294e760cd80c&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dao" />
@@ -174,7 +168,8 @@
       <workItem from="1660991529633" duration="6758000" />
       <workItem from="1661000138447" duration="83000" />
       <workItem from="1661018435081" duration="7428000" />
-      <workItem from="1661088773505" duration="13313000" />
+      <workItem from="1661088773505" duration="22454000" />
+      <workItem from="1661152706599" duration="1010000" />
     </task>
     <task id="LOCAL-00001" summary="[v1.0.0] Init">
       <created>1661091972031</created>
@@ -197,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661100473822</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[v1.1.0] Added dataBase logic for User.">
+      <created>1661103021979</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661103021979</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +220,18 @@
     <MESSAGE value="[v1.0.0] Init" />
     <MESSAGE value="[v1.0.1] Enhanced Mapper class." />
     <MESSAGE value="[v1.0.2] Added dataBase support." />
-    <option name="LAST_COMMIT_MESSAGE" value="[v1.0.2] Added dataBase support." />
+    <MESSAGE value="[v1.1.0] Added dataBase logic for User." />
+    <option name="LAST_COMMIT_MESSAGE" value="[v1.1.0] Added dataBase logic for User." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
